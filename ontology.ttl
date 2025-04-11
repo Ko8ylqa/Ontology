@@ -1,0 +1,14 @@
+PREFIX sdo: <https://schema.org>
+
+:Turkey a sdo:Country .
+
+:CentralAnatolia a sdo:AdministrativeArea .
+
+:AnkaraProvince a sdo:AdministrativeArea .
+
+:AnkaraCity a sdo:City .
+
+# linking
+:CentralAnatolia sdo:geoWithin :Turkey .
+:AnkaraProvince sdo:geoWithin :CentralAnatolia .
+:AnkaraCity sdo:geoWithin :AnkaraProvince .
